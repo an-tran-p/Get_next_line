@@ -6,7 +6,7 @@
 /*   By: atran <atran@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 14:38:06 by atran             #+#    #+#             */
-/*   Updated: 2024/11/21 14:11:46 by atran            ###   ########.fr       */
+/*   Updated: 2024/11/22 18:37:23 by atran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,18 @@
 # include <unistd.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 5
+#  define BUFFER_SIZE 100000
 # endif
 
+void	ft_free(char **str);
+size_t	ft_strlen(const char *str);
+char	*ft_strdup(const char *s);
+char	*ft_strchr(const char *s, int c);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
+char	*ft_fill_line(char *src);
+char	*ft_remain(char *s);
+char	*ft_strjoin(char *s1, char *s2);
+char	*find_line(char **store, char *buffer, char *line, int fd);
 char	*get_next_line(int fd);
 
 #endif
