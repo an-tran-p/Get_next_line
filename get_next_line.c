@@ -6,7 +6,7 @@
 /*   By: atran <atran@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 13:29:09 by atran             #+#    #+#             */
-/*   Updated: 2024/11/22 18:36:25 by atran            ###   ########.fr       */
+/*   Updated: 2024/11/23 21:27:38 by atran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,7 +98,7 @@ char	*find_line(char **store, char *buffer, char *line, int fd)
 			*store = ft_strjoin(*store, buffer);
 		}
 		else
-			return (ft_free(&buffer), NULL);
+			return (ft_free(&buffer), ft_free(store), NULL);
 	}
 	return (line);
 }

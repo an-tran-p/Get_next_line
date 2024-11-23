@@ -6,20 +6,17 @@
 /*   By: atran <atran@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 14:38:06 by atran             #+#    #+#             */
-/*   Updated: 2024/11/22 18:37:23 by atran            ###   ########.fr       */
+/*   Updated: 2024/11/23 21:27:40 by atran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
-# include <fcntl.h>
-# include <stdint.h>
-# include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 100000
+#  define BUFFER_SIZE 1000
 # endif
 
 void	ft_free(char **str);

@@ -6,7 +6,7 @@
 /*   By: atran <atran@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 17:59:24 by atran             #+#    #+#             */
-/*   Updated: 2024/11/22 18:06:48 by atran            ###   ########.fr       */
+/*   Updated: 2024/11/23 21:27:35 by atran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_strdup(const char *s)
 	size_t	i;
 
 	i = 0;
-	l = ft_strlen((char *)s) + 1;
+	l = ft_strlen(s) + 1;
 	dest = malloc(l * sizeof(char));
 	if (!dest)
 		return (0);
