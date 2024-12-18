@@ -6,7 +6,7 @@
 /*   By: atran <atran@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 13:29:09 by atran             #+#    #+#             */
-/*   Updated: 2024/11/23 21:27:38 by atran            ###   ########.fr       */
+/*   Updated: 2024/12/13 10:54:19 by atran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,7 +111,7 @@ char	*get_next_line(int fd)
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
-	buffer = malloc((BUFFER_SIZE + 1) * sizeof(char));
+	buffer = malloc((unsigned int)(BUFFER_SIZE + 1) * sizeof(char));
 	if (!buffer)
 		return (NULL);
 	if (!store)
